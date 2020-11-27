@@ -17,7 +17,7 @@ app.post('/update', (req, res) => {
     // run needed commands here
     console.log('Running deployment shell script:');
     const deploySequence = cp.execFile('deploy.sh', (e,stdout,stdrr) => {
-      console.log(e,stdout,stderr);
+      console.log(e,stdout,stdrr);
     })
     res.sendStatus(200)
   }
