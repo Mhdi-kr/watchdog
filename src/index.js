@@ -1,5 +1,5 @@
 const express = require('express')
-const parser = ('body-parser')
+const parser = require('body-parser')
 const cp = require('child_process')
 
 const app = express()
